@@ -1,0 +1,38 @@
+---
+layout: default
+title: description-page-desktop
+permalink: /description-page-desktop/
+---
+
+
+
+
+<!-- Responsive -->
+{% include gallery.html %}
+
+<!-- two column (first is large, second is thin-->
+<!-- First columns -->
+<div>
+      {% include review-card-2.html %}
+      {% include facilities.html %}
+      {% include maps-of-attraction-card.html %}
+      {% include title.html %}  
+      {% include packages-summury.html %}  
+      {% include accordion.html %}
+</div>
+<!-- second columns -->
+<div>
+  {% include hotel-reviews.html %}
+  {% include best-package-summury.html %}
+  <!-- best price ...-->
+  {% include icons-title-text-card.html %}
+  <!-- 7 days ...(keep same text, no problem)-->
+  {% include icons-title-text-card.html %}
+  {% include nearby-attraction-card.html %}
+</div>
+
+<!-- Full colum -->
+{% include hotel-reviews.html %}
+{% include hotel-reviews.html %}
+{% include icons-list.html %}
+{% include review-card-1.html %}
