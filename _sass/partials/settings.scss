@@ -1,0 +1,47 @@
+// SETTINGS
+// Global variables
+
+// Basic styling
+
+// Body
+$font-family-base: "Open Sans", sans-serif !default;
+$font-size-base: 1rem !default;
+$font-weight-base: 400 !default;
+$line-height-base: 1 !default;
+$body-background-color: #f9f9fb !default;
+$body-text-align: left !default;
+$body-text-color: #1e2021 !default;
+
+// Spacing
+$spacer: 1rem;
+
+// Typograph
+
+// For responsiveness
+$font-size-on-small-screen: 0.75rem;
+$font-size-on-large-screen: 1.00rem;
+
+// Headings
+$h1-font-size: 2.5rem !default;
+$h2-font-size: 2rem !default;
+$h3-font-size: 1.75rem !default;
+$h4-font-size: 1.5rem !default;
+$h5-font-size: 1.25rem !default;
+$h6-font-size: 1rem !default;
+
+// Small
+$small-font-size: 80% !default;
+
+// Color
+$black: #1e2021;
+$brown: #c59d5f;
+$green: #00AF87;
+$blue: #067891;
+$white: #ffffff;
+$light: #f9f9fb;
+
+// Links
+$link-color: $black;
+
+// Media query
+$large-screen: 768px;

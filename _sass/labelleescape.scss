@@ -1,0 +1,119 @@
+// ======================================================================
+// CONTENTS
+//
+// SETTINGS
+// Global variables
+// 
+// TOOLS
+// Mixins
+// 
+// GENERIC
+// Normalize.css
+// Better default of box-sizing
+// 
+// BASE
+// Basic styling
+// Spacing
+// Typograph
+// Links
+//
+// LAYOUT
+// Container
+// Row
+// Columns
+// 
+// COMPONENTS
+// Cards
+// Buttons
+//
+// UTILITIES
+// 
+// =====================================================================
+
+// SETTINGS
+@import "partials/settings";
+
+// TOOLS
+@import "partials/tools";
+
+// GENERIC
+@import "partials/generic";
+
+// BASE
+@import "partials/base";
+
+// LAYOUT
+@import "partials/layout";
+
+// COMPONENTS
+@import "partials/components";
+@import "components/header";
+@import "components/banner";
+@import "components/facilities";
+@import "components/accordion";
+@import "components/nearby-attraction-card";
+@import "components/maps-of-attraction-card";
+@import "components/destination-top-pic";
+@import "components/hotel-reviews";
+
+
+// UTILITIES
+@import "partials/utilities";
+
+// This style is temporary, will be deleted when the project is done
+.trello {
+  @extend .wrapper;
+  padding: $spacer;
+  
+  font-family: sans-serif;
+}
+
+$white:  #fff;
+$black:  #000;
+$green:  #28a745;
+$red:    #dc3545;
+$blue:   #007bff;
+$purple: #6f42c1;
+$yellow: #ffc107;
+
+.component-name {
+  display: inline-block;
+  
+  margin: $spacer 0rem;
+}
+
+.location {
+  
+  &--html {
+    color: $blue;
+  }
+  
+  &--scss {
+    color: $purple;
+  }
+}
+
+.component-status {
+  display:          inline-block;
+  
+  margin:           $spacer 0rem;
+  padding:          $spacer/2 $spacer;
+  
+  color:            $white;
+  background-color: $black;
+  
+  &--is-done {
+    color:            $white;
+    background-color: $green;
+  }
+  
+  &--is-waiting-for-review {
+    color:            $white;
+    background-color: $red;
+  }
+  
+  &--is-in-progress {
+    color:            $white;
+    background-color: $yellow;
+  }
+}

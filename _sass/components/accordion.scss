@@ -1,0 +1,52 @@
+.accordion-title {
+    margin: 6px 22px 6px 22px;
+    display: inline-block;
+    
+    h3 {
+        float: left;
+    }
+
+    img {
+        float: right;
+
+        background-color: red;
+        width: 16px;
+        height: 16px;
+    }
+    .open {
+        background-color: green;
+    }    
+}
+
+.accordion-content {
+    @extend .wrapper;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    margin-top: -3rem;
+    z-index: 1;
+
+    ul {
+        padding: 5px 30px 25px 30px;
+        margin-bottom: $spacer;
+        list-style: none;
+        li::before {
+            content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+            color: $brown; /* Change the color */
+            font-weight: bold; /* If you want it to be bold */
+            display: inline-block; /* Needed to add space between the bullet and the text */ 
+            width: 1em; /* Also needed for space (tweak if needed) */
+            margin-left: -1em; /* Also needed for space (tweak if needed) */
+        }        
+    }
+
+    li {
+        margin-top: 21px;
+        letter-spacing: 0.03em;
+        line-height: 21px;
+        text-align: justify;
+        letter-spacing: 0.03em;
+        color: $black;        
+    }
+}

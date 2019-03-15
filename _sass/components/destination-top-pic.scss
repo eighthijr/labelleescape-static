@@ -1,0 +1,17 @@
+.destination-top-pic {
+    margin-top: 13px;
+    
+
+    .img-container {
+        @extend .border-radius--all-bottom;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            min-width: 100%;
+        }
+    }
+    
+}

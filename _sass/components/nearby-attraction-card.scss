@@ -1,0 +1,30 @@
+.attractions-list {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 17px;
+
+    font-size: 13px;
+    line-height: normal;
+    letter-spacing: 0.02em;
+}
+
+.attractions-list div {
+    margin-bottom: $spacer;
+    height: 25px;
+    display: inline-flex;
+    flex-direction: row;
+
+    svg {
+        height: 80%;
+        align-self: center;
+    }
+
+    span {
+        margin-left: 10px;
+        font-size: 13px;
+        line-height: normal;
+        letter-spacing: 0.02em;
+        align-self: center;
+    }
+}

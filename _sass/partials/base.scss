@@ -1,0 +1,61 @@
+/* Base
+*/
+
+/* Font Face */
+@font-face {
+  font-family: "Helvetica";
+  font-weight: normal;
+  src: url("https://eighthijr.github.io/labelleescape/assets/fonts/helvetica-thin.otf");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-weight: bold;
+  src: url("https://eighthijr.github.io/labelleescape/assets/fonts/helvetica-bold.otf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  font-weight: normal;
+  src: url("https://eighthijr.github.io/labelleescape/assets/fonts/quicksand-regular.otf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  font-weight: bold;
+  src: url("https://eighthijr.github.io/labelleescape/assets/fonts/quicksand-bold.otf");
+}
+
+.font-quicksand {
+  font-family: "Quicksand";
+}
+
+/* Font Size */
+html {
+  font-size: 75%;
+}
+
+/* Basic Styling */
+body {
+  padding: 2rem 0rem;
+  font-family: "Helvetica";
+  letter-spacing: 0.03em;
+}
+
+/* Reset */
+p,
+h1, h2, h3, h4, h5, h6,
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Paragraph */
+p {
+  margin-bottom: 0.5rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}

@@ -1,0 +1,46 @@
+// Banner
+.banner {
+  position: relative;
+  top: 0;
+  left: $spacer*2;
+
+  width: calc(50px - $spacer*2);
+
+  padding: $spacer;
+
+  background: $white;
+
+  &__bottom {
+    position: relative;
+    left: $spacer*2;;
+
+    width: 50x;
+    height: 0;
+
+    @extend .only-on-small-screen;
+
+    border-left: 50px solid $white;
+    border-bottom: 25px solid transparent;
+  }
+  
+  @include media-query($large-screen) {
+    position: absolute;
+    top: 0;
+    left: $spacer*2;
+    bottom: 0;
+
+    min-width: 200px;
+
+    padding: $spacer*2 $spacer/2;
+
+    @include flexbox();
+    flex-direction: column;
+
+    justify-content: space-between !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    
+    // Based on the design in Figma
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}

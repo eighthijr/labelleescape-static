@@ -1,0 +1,27 @@
+/* Layout
+*/
+
+/* Flex Grid */
+.column {
+  flex: 0 0 1;
+  
+  &--100 {
+    flex: 0 0 100%;  
+  }
+  
+  &--70 {
+    flex: 0 0 70%;  
+  }
+  
+  &--50 {
+    flex: 0 0 50%;
+  }
+  
+  &--30 {
+    flex: 0 0 30%;
+  }
+}
+
+.block {
+  display: block;
+}
